@@ -41,10 +41,14 @@ body {
   font-size: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
+  outline: none;
+  padding: 0px 30px;
 }
 
 .text-area {
   height: 70vh;
+  outline: none;
+  padding: 0 30px;
 }
 
 .buttons {
