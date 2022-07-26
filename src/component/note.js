@@ -1,11 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTrash,
-  faArrowAltCircleRight,
-} from "@fortawesome/free-solid-svg-icons";
-import Nav from "./nav";
 import deleteLogo from "./Images/delete (1).png";
 import secondDeleteLogo from "./Images/delete (2).png";
 import viewLogo from "./Images/invisible.png";

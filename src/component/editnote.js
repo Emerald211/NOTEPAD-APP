@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import Note from './note';
 import { Link } from 'react-router-dom'
 
 
@@ -29,7 +28,6 @@ function Editnote() {
 
         const titleContent = document.querySelector("#title-content");
         const textareaContent = document.querySelector('#textarea-content');
-        const editForm = document.querySelector("#form")
         const fetchData = JSON.parse(localStorage.getItem("localNote"))
         const date = new Date();
         const Months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]

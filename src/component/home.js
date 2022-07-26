@@ -10,8 +10,8 @@ function Home(props) {
   const fetchData = JSON.parse(localStorage.getItem("localNote")) 
   console.log(fetchData)
 
-  const [addNote, setNote] = useState(fetchData)
-  let isValid = false
+  const [addNote] = useState(fetchData)
+
 
 
 
