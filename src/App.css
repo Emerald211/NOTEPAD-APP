@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(26, 28, 30, 0.9);
+  padding: 0 5%;
+  min-height: 100vh;
+}
+
+.button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: 5%;
+  right: 5%;
+  border: none;
+  box-shadow: 2px 2px 10px rgb(46, 44, 44);
+}
+.add-note-section {
+  width: 100%;
+  min-height: 80vh;
+  background-color: aliceblue;
+  position: relative;
+}
+
+.add-note-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-note-section form input {
+  width: 100%;
+}
+
+.title {
+  height: 60px;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.text-area {
+  height: 70vh;
+}
+
+.buttons {
+  display: flex;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  margin-right: 20px;
+  width: 100px;
+  height: 30px;
+}
+
+.allNote {
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.note-card {
+  padding: 20px;
+}
+
+.note-card button {
+  background-color: unset;
+}
+
+.date-delete {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-delete h4 {
+  font-size: 0.8rem;
+}
+
+.date-delete button {
+  border: none;
+}
+
+.title-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.title-edit button {
+  border: none;
+}
