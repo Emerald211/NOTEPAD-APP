@@ -10,7 +10,22 @@ function Home(props) {
   const fetchData = JSON.parse(localStorage.getItem("localNote")) 
   console.log(fetchData)
 
-  const [addNote] = useState(fetchData)
+  const [addNote, setNote] = useState(fetchData)
+
+  const deleteNote = (id) => {
+    setNote(addNote.filter(eachItem => {
+      return (
+        eachItem.id !== id
+      )
+    }))
+    
+    
+    localStorage.setItem("localNote", JSON.stringify(addNote.filter(eachItem => {
+      return (
+        eachItem.id !== id
+      )
+    })));
+  };
 
 
 
@@ -24,7 +39,7 @@ function Home(props) {
             <h1 className="noItem">No item here</h1>
           ) : (addNote.map(eachNote => {
             return (
-              <Note change = {props.change} name={eachNote.name} date={eachNote.date} />
+              <Note change = {props.change} name={eachNote.name} id={eachNote.id} date={eachNote.date} onDelete={deleteNote} />
             )
         })) }
         </div>

@@ -64,7 +64,8 @@ function Editnote() {
         const data = {
             name: titleContent.value,
             message: textareaContent.value,
-            date: fullDate
+          date: fullDate,
+            id: Math.floor((Math.random() * 500) + 1)
         }
 
         console.log(data)

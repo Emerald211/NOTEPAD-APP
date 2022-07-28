@@ -6,31 +6,7 @@ import viewLogo from "./Images/invisible.png";
 import secondViewLogo from "./Images/invisible (1).png";
 
 function Note(props) {
-  const deleteNote = (e) => {
-    const allDeleteBtn = document.querySelectorAll(".deleteBtn");
-    const convertNode = [];
-
-    for (let i = 0; i < allDeleteBtn.length; i++) {
-      convertNode.push(allDeleteBtn[i]);
-    }
-
-    console.log(convertNode);
-
-    console.log(convertNode.indexOf(e.target));
-
-    const targetNode = convertNode.indexOf(e.target);
-
-    const fetchLocalData = JSON.parse(localStorage.getItem("localNote"));
-    console.log(fetchLocalData);
-
-    fetchLocalData.splice(targetNode, 1);
-
-    console.log(fetchLocalData);
-
-    localStorage.setItem("localNote", JSON.stringify(fetchLocalData));
-    document.location.reload(true);
-  };
-
+ 
   const editContent = (e) => {
     const allEditBtn = document.querySelectorAll(".edit");
     const editArr = [];
@@ -88,7 +64,7 @@ function Note(props) {
           <button style={{ backgroundColor: "none" }}>
             <img
               className="deleteBtn"
-              onClick={deleteNote}
+              onClick={() => props.onDelete(props.id)}
               style={{ width: "16px", height: "16px" }}
               src={props.change ? secondDeleteLogo : deleteLogo}
               alt=""

@@ -54,7 +54,8 @@ function AddNote() {
             const data = {
                 name: dataForm.title.value,
                 message: formMessage.value,
-                date: fullDate
+                date: fullDate,
+                id: Math.floor((Math.random() * 500) + 1)
             }
     
             fetchLocalDatabase.push(data);
@@ -69,7 +70,8 @@ function AddNote() {
             const parseDb = {
                 name: dataForm.title.value,
                 message: formMessage.value,
-                date: fullDate
+                date: fullDate,
+                id: Math.floor((Math.random() * 500) + 1)
             }
 
             fetchDb.push(parseDb);
