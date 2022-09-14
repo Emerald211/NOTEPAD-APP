@@ -99,7 +99,7 @@ function Editnote() {
       <div>
           <div className='add-note-section'>
               <form id='form' onSubmit={saveChanges}  action="">
-                  <input id='title-content' value={titleName} onChange={handleChange}  name='title' className='title' type="text" placeholder='Enter a Title' required />
+                  <input id='title-content' value={titleName} onChange={handleChange}  name='title' className='title' type="text" maxLength="10"  placeholder='Enter a Title' required />
                   <textarea onChange={handleMessage} id='textarea-content' className="text-area" >{ message }</textarea>
                       
                  
