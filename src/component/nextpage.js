@@ -98,7 +98,7 @@ function AddNote() {
       <div>
           <div className='add-note-section'>
               <form onSubmit={saveData} action="">
-                  <input  name='title' className='title' type="text" placeholder='Enter a Title' required />
+                  <input  name='title' className='title' maxLength="10" type="text" placeholder='Enter a Title' required />
                   <textarea className="text-area" ></textarea>
                       
                  
